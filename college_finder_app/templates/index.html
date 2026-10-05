@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>College &amp; University Finder</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>College &amp; University Finder</h1>
+
+  <div class="controls">
+    <label for="state-select">State</label>
+    <select id="state-select"></select>
+
+    <button id="search-btn" type="button">Search</button>
+    <button id="refresh-btn" type="button" title="Force a fresh fetch from College Scorecard">Refresh</button>
+    <button id="export-btn" type="button" disabled>Export CSV</button>
+  </div>
+
+  <details id="field-picker" open>
+    <summary>Fields to show</summary>
+    <input id="field-filter" type="text" placeholder="Filter fields...">
+    <div id="field-categories"></div>
+  </details>
+
+  <div id="error-banner" class="error" hidden></div>
+  <div id="loading" hidden>Loading...</div>
+
+  <table id="results-table">
+    <thead><tr id="results-head"></tr></thead>
+    <tbody id="results-body"></tbody>
+  </table>
+
+  <div id="staff-toolbar" hidden>
+    <button id="find-staff-btn" type="button">Find Staff for Selected</button>
+    <label><input type="checkbox" id="staff-refresh-toggle"> Refresh (bypass cache)</label>
+    <span id="staff-progress"></span>
+  </div>
+
+  <div id="staff-section" hidden>
+    <h2>Athletics Staff</h2>
+    <div id="staff-filters">
+      <button type="button" class="staff-filter-chip" data-category="coach">Coach</button>
+      <button type="button" class="staff-filter-chip" data-category="admin">Admin</button>
+      <button type="button" class="staff-filter-chip" data-category="sports_medicine">Sports Medicine</button>
+      <button type="button" class="staff-filter-chip" data-category="sports_info">Sports Info</button>
+      <button type="button" class="staff-filter-chip" data-category="error">Error</button>
+      <button id="staff-export-btn" type="button" disabled>Export Staff CSV</button>
+    </div>
+    <table id="staff-table">
+      <thead>
+        <tr>
+          <th>School</th><th>Name</th><th>Title</th><th>Category</th>
+          <th>Sport</th><th>Email</th><th>Phone</th><th>References</th><th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="staff-body"></tbody>
+    </table>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

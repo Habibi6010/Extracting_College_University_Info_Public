@@ -1,0 +1,2177 @@
+{
+  "categories": [
+    {
+      "key": "basic_info",
+      "label": "Basic Info",
+      "fields": [
+        {
+          "api_field": "id",
+          "label": "Unit ID for institution",
+          "is_url": false
+        },
+        {
+          "api_field": "ope8_id",
+          "label": "8-digit OPE ID for institution",
+          "is_url": false
+        },
+        {
+          "api_field": "ope6_id",
+          "label": "6-digit OPE ID for institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.name",
+          "label": "Institution name",
+          "is_url": false
+        },
+        {
+          "api_field": "school.accreditor",
+          "label": "Accreditor for institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.school_url",
+          "label": "URL for institution's homepage",
+          "is_url": true
+        },
+        {
+          "api_field": "school.price_calculator_url",
+          "label": "URL for institution's net price calculator",
+          "is_url": true
+        },
+        {
+          "api_field": "school.under_investigation",
+          "label": "Schools that are on Heightened Cash Monitoring 2 by the Department of Education",
+          "is_url": false
+        },
+        {
+          "api_field": "school.main_campus",
+          "label": "Flag for main campus",
+          "is_url": false
+        },
+        {
+          "api_field": "school.branches",
+          "label": "Number of branch campuses",
+          "is_url": false
+        },
+        {
+          "api_field": "school.operating",
+          "label": "Flag for currently operating institution, 0=closed, 1=operating",
+          "is_url": false
+        },
+        {
+          "api_field": "school.alias",
+          "label": "Institution name aliases",
+          "is_url": false
+        },
+        {
+          "api_field": "school.accreditor_code",
+          "label": "Code corresponding to accreditor (as captured from PEPS)",
+          "is_url": false
+        },
+        {
+          "api_field": "school.title_iv.approval_date",
+          "label": "Date that institution was first approved to participate in Title IV aid programs",
+          "is_url": false
+        },
+        {
+          "api_field": "school.title_iv.eligibility_type",
+          "label": "Title IV eligibility type",
+          "is_url": false
+        },
+        {
+          "api_field": "fed_sch_cd",
+          "label": "Federal School Code",
+          "is_url": false
+        },
+        {
+          "api_field": "school.dolflag",
+          "label": "DOL approved training provider indicator",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "location",
+      "label": "Location",
+      "fields": [
+        {
+          "api_field": "school.city",
+          "label": "City",
+          "is_url": false
+        },
+        {
+          "api_field": "school.state",
+          "label": "State postcode",
+          "is_url": false
+        },
+        {
+          "api_field": "school.zip",
+          "label": "ZIP code",
+          "is_url": false
+        },
+        {
+          "api_field": "school.state_fips",
+          "label": "FIPS code for state",
+          "is_url": false
+        },
+        {
+          "api_field": "school.region_id",
+          "label": "Region (IPEDS)",
+          "is_url": false
+        },
+        {
+          "api_field": "school.locale",
+          "label": "Locale of institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.degree_urbanization",
+          "label": "Degree of urbanization of institution",
+          "is_url": false
+        },
+        {
+          "api_field": "location.lat",
+          "label": "Latitude",
+          "is_url": false
+        },
+        {
+          "api_field": "location.lon",
+          "label": "Longitude",
+          "is_url": false
+        },
+        {
+          "api_field": "school.address",
+          "label": "Address of institution",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "institution_type",
+      "label": "Institution Type",
+      "fields": [
+        {
+          "api_field": "school.degrees_awarded.predominant_recoded",
+          "label": "Predominant degree awarded (recoded 0s and 4s)",
+          "is_url": false
+        },
+        {
+          "api_field": "school.degrees_awarded.predominant",
+          "label": "Predominant undergraduate degree awarded",
+          "is_url": false
+        },
+        {
+          "api_field": "school.degrees_awarded.highest",
+          "label": "Highest degree awarded",
+          "is_url": false
+        },
+        {
+          "api_field": "school.ownership",
+          "label": "Control of institution (IPEDS)",
+          "is_url": false
+        },
+        {
+          "api_field": "school.carnegie_basic",
+          "label": "Carnegie Classification -- basic",
+          "is_url": false
+        },
+        {
+          "api_field": "school.carnegie_undergrad",
+          "label": "Carnegie Classification -- undergraduate profile",
+          "is_url": false
+        },
+        {
+          "api_field": "school.carnegie_size_setting",
+          "label": "Carnegie Classification -- size and setting",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.historically_black",
+          "label": "Flag for Historically Black College and University",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.predominantly_black",
+          "label": "Flag for predominantly black institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.annh",
+          "label": "Flag for Alaska Native Native Hawaiian serving institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.tribal",
+          "label": "Flag for tribal college and university",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.aanipi",
+          "label": "Flag for Asian American Native American Pacific Islander-serving institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.hispanic",
+          "label": "Flag for Hispanic-serving institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.minority_serving.nant",
+          "label": "Flag for Native American non-tribal institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.men_only",
+          "label": "Flag for men-only college",
+          "is_url": false
+        },
+        {
+          "api_field": "school.women_only",
+          "label": "Flag for women-only college",
+          "is_url": false
+        },
+        {
+          "api_field": "school.religious_affiliation",
+          "label": "Religous affiliation of the institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.online_only",
+          "label": "Flag for distance-education-only education",
+          "is_url": false
+        },
+        {
+          "api_field": "school.tuition_revenue_per_fte",
+          "label": "Net tuition revenue per full-time equivalent student",
+          "is_url": false
+        },
+        {
+          "api_field": "school.instructional_expenditure_per_fte",
+          "label": "Instructional expenditures per full-time equivalent student",
+          "is_url": false
+        },
+        {
+          "api_field": "school.faculty_salary",
+          "label": "Average faculty salary",
+          "is_url": false
+        },
+        {
+          "api_field": "school.ft_faculty_rate",
+          "label": "Proportion of faculty that is full-time",
+          "is_url": false
+        },
+        {
+          "api_field": "school.institutional_characteristics.level",
+          "label": "Level of institution",
+          "is_url": false
+        },
+        {
+          "api_field": "school.open_admissions_policy",
+          "label": "Open admissions policy indicator",
+          "is_url": false
+        },
+        {
+          "api_field": "school.ownership_peps",
+          "label": "Control of institution, per PEPS",
+          "is_url": false
+        },
+        {
+          "api_field": "school.endowment.begin",
+          "label": "Value of school's endowment at the beginning of the fiscal year",
+          "is_url": false
+        },
+        {
+          "api_field": "school.endowment.end",
+          "label": "Value of school's endowment at the end of the fiscal year",
+          "is_url": false
+        },
+        {
+          "api_field": "school.peps_ownership",
+          "label": "Control of institution (PEPS)",
+          "is_url": false
+        },
+        {
+          "api_field": "school.sector.scorecard",
+          "label": "Institutional sector derived from the ownership structure (CONTROL) and the predominant level of award conferred (PREDDEG)",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "admissions",
+      "label": "Admissions",
+      "fields": [
+        {
+          "api_field": "latest.admissions.admission_rate.overall",
+          "label": "Admission rate",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.admission_rate.by_ope_id",
+          "label": "Admission rate for all campuses rolled up to the 6-digit OPE ID",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.25th_percentile.critical_reading",
+          "label": "25th percentile of SAT scores at the institution (critical reading)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.75th_percentile.critical_reading",
+          "label": "75th percentile of SAT scores at the institution (critical reading)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.25th_percentile.math",
+          "label": "25th percentile of SAT scores at the institution (math)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.75th_percentile.math",
+          "label": "75th percentile of SAT scores at the institution (math)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.25th_percentile.writing",
+          "label": "25th percentile of SAT scores at the institution (writing)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.75th_percentile.writing",
+          "label": "75th percentile of SAT scores at the institution (writing)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.midpoint.critical_reading",
+          "label": "Midpoint of SAT scores at the institution (critical reading)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.midpoint.math",
+          "label": "Midpoint of SAT scores at the institution (math)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.midpoint.writing",
+          "label": "Midpoint of SAT scores at the institution (writing)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.25th_percentile.cumulative",
+          "label": "25th percentile of the ACT cumulative score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.75th_percentile.cumulative",
+          "label": "75th percentile of the ACT cumulative score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.25th_percentile.english",
+          "label": "25th percentile of the ACT English score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.75th_percentile.english",
+          "label": "75th percentile of the ACT English score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.25th_percentile.math",
+          "label": "25th percentile of the ACT math score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.75th_percentile.math",
+          "label": "75th percentile of the ACT math score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.25th_percentile.writing",
+          "label": "25th percentile of the ACT writing score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.75th_percentile.writing",
+          "label": "75th percentile of the ACT writing score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.midpoint.cumulative",
+          "label": "Midpoint of the ACT cumulative score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.midpoint.english",
+          "label": "Midpoint of the ACT English score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.midpoint.math",
+          "label": "Midpoint of the ACT math score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.midpoint.writing",
+          "label": "Midpoint of the ACT writing score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.average.overall",
+          "label": "Average SAT equivalent score of students admitted",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.average.by_ope_id",
+          "label": "Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.test_requirements",
+          "label": "Test score requirements for admission",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.admission_rate_suppressed.overall",
+          "label": "Admission rate, suppressed for n<30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.50th_percentile.critical_reading",
+          "label": "50th percentile of SAT scores at the institution (critical reading)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.sat_scores.50th_percentile.math",
+          "label": "50th percentile of SAT scores at the institution (math)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.50th_percentile.cumulative",
+          "label": "50th percentile of the ACT cumulative score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.50th_percentile.english",
+          "label": "50th percentile of the ACT English score",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.admissions.act_scores.50th_percentile.math",
+          "label": "50th percentile of the ACT math score",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "cost",
+      "label": "Cost",
+      "fields": [
+        {
+          "api_field": "latest.cost.avg_net_price.public",
+          "label": "Average net price for Title IV institutions (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.avg_net_price.private",
+          "label": "Average net price for Title IV institutions (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.avg_net_price.program_year",
+          "label": "Average net price for the largest program at the institution for program-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.avg_net_price.other_academic_year",
+          "label": "Average net price for the largest program at the institution for schools on \"other\" academic year calendars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.0-30000",
+          "label": "Average net price for $0-$30,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.30001-48000",
+          "label": "Average net price for $30,001-$48,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.48001-75000",
+          "label": "Average net price for $48,001-$75,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.75001-110000",
+          "label": "Average net price for $75,001-$110,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.110001-plus",
+          "label": "Average net price for $110,000+ family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.0-30000",
+          "label": "Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.30001-48000",
+          "label": "Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.48001-75000",
+          "label": "Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.75001-110000",
+          "label": "Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.110001-plus",
+          "label": "Average net price for $110,000+ family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.0-30000",
+          "label": "Average net price for $0-$30,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.30001-48000",
+          "label": "Average net price for $30,001-$48,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.48001-75000",
+          "label": "Average net price for $48,001-$75,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.75001-110000",
+          "label": "Average net price for $75,001-$110,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.110001-plus",
+          "label": "Average net price for $110,000+ family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.0-30000",
+          "label": "Average net price for $0-$30,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.30001-48000",
+          "label": "Average net price for $30,001-$48,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.48001-75000",
+          "label": "Average net price for $48,001-$75,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.75001-110000",
+          "label": "Average net price for $75,001-$110,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.110001-plus",
+          "label": "Average net price for $110,000+ family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.0-48000",
+          "label": "Average net price for $0-$48,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.0-48000",
+          "label": "Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.0-48000",
+          "label": "Average net price for $0-$48,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.0-48000",
+          "label": "Average net price for $0-$48,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.30001-75000",
+          "label": "Average net price for $30,001-$75,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.30001-75000",
+          "label": "Average net price for $30,001-$75,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.public.by_income_level.75000-plus",
+          "label": "Average net price for $75,000+ family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.private.by_income_level.75000-plus",
+          "label": "Average net price for $75,000+ family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.30001-75000",
+          "label": "Average net price for $30,001-$75,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.30001-75000",
+          "label": "Average net price for $30,001-$75,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.program_reporter.by_income_level.75000-plus",
+          "label": "Average net price for $75,000+ family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.net_price.other_acad_calendar.by_income_level.75000-plus",
+          "label": "Average net price for $75,000+ family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.all",
+          "label": "Number of Title IV students (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.all",
+          "label": "Number of Title IV students (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_year",
+          "label": "Number of Title IV students (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.academic_year",
+          "label": "Number of Title IV students (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.by_income_level.0-30000",
+          "label": "Number of Title IV students, $0-$30,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.by_income_level.30001-48000",
+          "label": "Number of Title IV students, $30,001-$48,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.by_income_level.48001-75000",
+          "label": "Number of Title IV students, $48,001-$75,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.by_income_level.75001-110000",
+          "label": "Number of Title IV students, $75,001-$110,000 family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.public.by_income_level.110001-plus",
+          "label": "Number of Title IV students, $110,000+ family income (public institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.by_income_level.0-30000",
+          "label": "Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.by_income_level.30001-48000",
+          "label": "Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.by_income_level.48001-75000",
+          "label": "Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.by_income_level.75001-110000",
+          "label": "Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.private.by_income_level.110001-plus",
+          "label": "Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_reporter.by_income_level.0-30000",
+          "label": "Number of Title IV students, $0-$30,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_reporter.by_income_level.30001-48000",
+          "label": "Number of Title IV students, $30,001-$48,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_reporter.by_income_level.48001-75000",
+          "label": "Number of Title IV students, $48,001-$75,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_reporter.by_income_level.75001-110000",
+          "label": "Number of Title IV students, $75,001-$110,000 family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.program_reporter.by_income_level.110001-plus",
+          "label": "Number of Title IV students, $110,000+ family income (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.other_acad_calendar.by_income_level.0-30000",
+          "label": "Number of Title IV students, $0-$30,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.other_acad_calendar.by_income_level.30001-48000",
+          "label": "Number of Title IV students, $30,001-$48,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.other_acad_calendar.by_income_level.48001-75000",
+          "label": "Number of Title IV students, $48,001-$75,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.other_acad_calendar.by_income_level.75001-110000",
+          "label": "Number of Title IV students, $75,001-$110,000 family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.title_iv.other_acad_calendar.by_income_level.110001-plus",
+          "label": "Number of Title IV students, $110,000+ family income (other academic calendar institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.attendance.academic_year",
+          "label": "Average cost of attendance (academic year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.attendance.program_year",
+          "label": "Average cost of attendance (program-year institutions)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.tuition.in_state",
+          "label": "In-state tuition and fees",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.tuition.out_of_state",
+          "label": "Out-of-state tuition and fees",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.tuition.program_year",
+          "label": "Tuition and fees for program-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_1.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for largest program (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_2.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for program #2 (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_3.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for program #3 (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_4.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for program #4 (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_5.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for program #5 (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_6.cip_6_digit.full_program",
+          "label": "Tuition, fees, books, and supply charges for program #6 (full program)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_1.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for largest program (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_2.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for program #2 (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_3.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for program #3 (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_4.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for program #4 (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_5.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for program #5 (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.program_reporter.program_6.cip_6_digit.annualized",
+          "label": "Tuition, fees, books, and supply charges for program #6 (annualized based on institution's academic year)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.booksupply",
+          "label": "Cost of attendance: estimated books and supplies",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.roomboard.oncampus",
+          "label": "Cost of attendance: on-campus room and board",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.otherexpense.oncampus",
+          "label": "Cost of attendance: on-campus other expenses",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.roomboard.offcampus",
+          "label": "Cost of attendance: off-campus room and board",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.otherexpense.offcampus",
+          "label": "Cost of attendance: off-campus other expenses",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.otherexpense.withfamily",
+          "label": "Cost of attendance: with-family other expenses",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.avg_net_price.consumer.median_by_pred_degree",
+          "label": "Median average net price amongst insitituions with the same predominant degree category",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.cost.avg_net_price.consumer.overall_median",
+          "label": "Overall median for average net price ",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "student_body",
+      "label": "Student Body",
+      "fields": [
+        {
+          "api_field": "latest.student.size",
+          "label": "Enrollment of undergraduate certificate/degree-seeking students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.enrollment.all",
+          "label": "Enrollment of all undergraduate students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.white",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are white",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.black",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are black",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.hispanic",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.asian",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are Asian",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.aian",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.nhpi",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.two_or_more",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are two or more races",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.non_resident_alien",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.unknown",
+          "label": "Total share of enrollment of undergraduate degree-seeking students whose race is unknown",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.white_non_hispanic",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are white non-Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.black_non_hispanic",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are black non-Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.asian_pacific_islander",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are Asian/Pacific Islander",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.aian_prior_2009",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.hispanic_prior_2009",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.non_resident_aliens_2000",
+          "label": "Total share of enrollment of undergraduate students who are non-resident aliens",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.unknown_2000",
+          "label": "Total share of enrollment of undergraduate students whose race is unknown",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.white_2000",
+          "label": "Total share of enrollment of undergraduate students who are white non-Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.black_2000",
+          "label": "Total share of enrollment of undergraduate students who are black non-Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.api_2000",
+          "label": "Total share of enrollment of undergraduate students who are Asian/Pacific Islander",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.aian_2000",
+          "label": "Total share of enrollment of undergraduate students who are American Indian/Alaska Native",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.race_ethnicity.hispanic_2000",
+          "label": "Total share of enrollment of undergraduate students who are Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.part_time_share",
+          "label": "Share of undergraduate, degree-/certificate-seeking students who are part-time",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.part_time_share_2000",
+          "label": "Share of undergraduate, degree-/certificate-seeking students who are part-time",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_first.time_full.time",
+          "label": "Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.four_year.full_time",
+          "label": "First-time, full-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.lt_four_year.full_time",
+          "label": "First-time, full-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.four_year.part_time",
+          "label": "First-time, part-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.lt_four_year.part_time",
+          "label": "First-time, part-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_25_older",
+          "label": "Percentage of undergraduates aged 25 and above",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_lowincome.0_30000",
+          "label": "Percentage of aided students whose family income is between $0-$30,000",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_students",
+          "label": "Percentage of students who are financially independent",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_lowincome.0_30000",
+          "label": "Percentage of students who are financially independent and have family incomes between $0-30,000",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_dependent_lowincome.0_300000",
+          "label": "Percentage of students who are financially dependent and have family incomes between $0-30,000",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_firstgeneration",
+          "label": "Percentage first-generation students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_middleincome.30001_48000",
+          "label": "Aided students with family incomes between $30,001-$48,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_middleincome.48001_75000",
+          "label": "Aided students with family incomes between $48,001-$75,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_highincome.75001_110000",
+          "label": "Aided students with family incomes between $75,001-$110,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_highincome.110001plus",
+          "label": "Aided students with family incomes between $110,001+ in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_dependent_middleincome.300001_48000",
+          "label": "Dependent students with family incomes between $30,001-$48,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_dependent_middleincome.48001_75000",
+          "label": "Dependent students with family incomes between $48,001-$75,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_dependent_highincome.75001_110000",
+          "label": "Dependent students with family incomes between $75,001-$110,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_dependent_highincome.110001plus",
+          "label": "Dependent students with family incomes between $110,001+ in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_middleincome.30001_48000",
+          "label": "Independent students with family incomes between $30,001-$48,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_middleincome.48001_75000",
+          "label": "Independent students with family incomes between $48,001-$75,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_highincome.75001_110000",
+          "label": "Independent students with family incomes between $75,001-$110,000 in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_independent_highincome.110001plus",
+          "label": "Independent students with family incomes between $110,001+ in nominal dollars",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_firstgeneration_parents.middleschool",
+          "label": "Percent of students whose parents' highest educational level is middle school",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_firstgeneration_parents.highschool",
+          "label": "Percent of students whose parents' highest educational level is high school",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.share_firstgeneration_parents.somecollege",
+          "label": "Percent of students whose parents' highest educational level was is some form of postsecondary education",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.2_college_allyrs",
+          "label": "Number of applications is greater than or equal to 2",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.3_college_allyrs",
+          "label": "Number of applications is greater than or equal to 3",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.4_college_allyrs",
+          "label": "Number of applications is greater than or equal to 4",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.5plus_college_allyrs",
+          "label": "Number of applications is greater than or equal to 5",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.avg_dependent_income.2014dollars",
+          "label": "Average family income of dependent students in real 2015 dollars.",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.avg_independent_income.2014dollars",
+          "label": "Average family income of independent students in real 2015 dollars.",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.family_income.overall",
+          "label": "Number of students in the family income cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.family_income.dependent_students",
+          "label": "Number of students in the family income dependent students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.family_income.independent_students",
+          "label": "Number of students in the family income independent students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.valid_dependency_status",
+          "label": "Number of students in the disaggregation with valid dependency status",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.parents_education_level",
+          "label": "Number of students in the parents' education level cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.FAFSA_applications",
+          "label": "Number of students in the FAFSA applications cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.students_with_pell_grant",
+          "label": "Share of students who received a Pell Grant while in school",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.age_entry",
+          "label": "Average age of entry",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.age_entry_squared",
+          "label": "Average of the age of entry squared",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.over_23_at_entry",
+          "label": "Percent of students over 23 at entry",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.female_share",
+          "label": "Share of female students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.married",
+          "label": "Share of married students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.dependent",
+          "label": "Share of dependent students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.veteran",
+          "label": "Share of veteran students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.first_generation",
+          "label": "Share of first-generation students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.avg_family_income",
+          "label": "Average family income",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.median_family_income",
+          "label": "Median family income",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.avg_family_income_independents",
+          "label": "Average family income for independent students ",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.avg_family_income_log",
+          "label": "Average of the log of family income",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.avg_family_income_independents_log",
+          "label": "Average of the log of family income for independent students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_white.home_ZIP",
+          "label": "Percent of the population from students' zip codes that is White, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_black.home_ZIP",
+          "label": "Percent of the population from students' zip codes that is Black, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_asian.home_ZIP",
+          "label": "Percent of the population from students' zip codes that is Asian, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_hispanic.home_ZIP",
+          "label": "Percent of the population from students' zip codes that is Hispanic, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_bachelors_degree_age25.home_ZIP",
+          "label": "Percent of the population from students' zip codes with a bachelor's degree over the age 25, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_professional_degree_age25.home_ZIP",
+          "label": "Percent of the population from students' zip codes over 25 with a professional degree, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.share_born_US.home_ZIP",
+          "label": "Percent of the population from students' zip codes that was born in the US, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.median_hh_income",
+          "label": "Median household income",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.poverty_rate",
+          "label": "Poverty rate, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.unemployment",
+          "label": "Unemployment rate, via Census data",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.median_hh_income_log",
+          "label": "Log of the median household income",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.overall",
+          "label": "Average number of students who sent their FAFSA reports to at least one college",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.1_college",
+          "label": "Share of students who submitted FAFSAs to only one college",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.2_colleges",
+          "label": "Share of students who submitted FAFSAs to two colleges",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.3_college",
+          "label": "Share of students who submitted FAFSAs to three colleges",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.4_colleges",
+          "label": "Share of students who submitted FAFSAs to four colleges",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.fafsa_sent.5_or_more_colleges",
+          "label": "Share of students who submitted FAFSAs to at least five colleges",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.men",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are men",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.women",
+          "label": "Total share of enrollment of undergraduate degree-seeking students who are women",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.undergrads_with_pell_grant_or_federal_student_loan",
+          "label": "Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.undergrads_non_degree_seeking",
+          "label": "Number of non-degree-seeking undergraduate students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.grad_students",
+          "label": "Number of graduate students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.four_year.full_time_pooled",
+          "label": "First-time, full-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.lt_four_year.full_time_pooled",
+          "label": "First-time, full-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.four_year.part_time_pooled",
+          "label": "First-time, part-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.lt_four_year.part_time_pooled",
+          "label": "First-time, part-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.cohort.four_year.full_time_pooled",
+          "label": "Adjusted cohort count for the first-time, full-time student retention rate at four-year institutions (denominator of the retention rate)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.cohort.lt_four_year.full_time_pooled",
+          "label": "Adjusted cohort count for the first-time, full-time student retention rate at less-than-four-year institutions (denominator of the retention rate)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.cohort.four_year.part_time_pooled",
+          "label": "Adjusted cohort count for the first-time, part-time student retention rate at four-year institutions (denominator of the retention rate)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.cohort.lt_four_year.part_time_pooled",
+          "label": "Adjusted cohort count for the first-time, part-time student retention rate at less-than-four-year institutions (denominator of the retention rate)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.pooled_yrs_used.full_time",
+          "label": "Years used for rolling averages of full-time retention rate RET_FT[4/L4]_POOLED",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate.pooled_yrs_used.part_time",
+          "label": "Years used for rolling averages of part-time retention rate RET_PT[4/L4]_POOLED",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate_suppressed.four_year.full_time_pooled",
+          "label": "First-time, full-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate_suppressed.lt_four_year.full_time_pooled",
+          "label": "First-time, full-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate_suppressed.four_year.part_time_pooled",
+          "label": "First-time, part-time student retention rate at four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.retention_rate_suppressed.lt_four_year.part_time_pooled",
+          "label": "First-time, part-time student retention rate at less-than-four-year institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.enrollment.undergrad_12_month",
+          "label": "Unduplicated count of undergraduate students enrolled during a 12 month period",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.enrollment.grad_12_month",
+          "label": "Unduplicated count of graduate students enrolled during a 12 month period",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.ftft_undergrads_with_pell_grant_or_federal_student_loan",
+          "label": "Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.ftft_undergrads_with_pell_grant_or_federal_student_loan_pooled",
+          "label": "Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.student_faculty_ratio",
+          "label": "Undergraduate student to instructional faculty ratio",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.two_or_more",
+          "label": "Share of full time faculty that are Two or More Races",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.aian",
+          "label": "Share of full time faculty that are American Indian or Alaskan Native",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.asian",
+          "label": "Share of full time faculty that are Asian",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.black",
+          "label": "Share of full time faculty that are Black or African American",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.hispanic",
+          "label": "Share of full time faculty that are Hispanic",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.nhpi",
+          "label": "Share of full time faculty that are Native Hawaiian or Other Pacific Islander",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.non_resident_alien",
+          "label": "Share of full time faculty that are U.S. Nonresidents",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.unknown",
+          "label": "Share of full time faculty that are of unknown race/ethnicity",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.race_ethnicity.white",
+          "label": "Share of full time faculty that are White",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.men",
+          "label": "Share of full time faculty that are men",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.demographics.faculty.women",
+          "label": "Share of full time faculty that are women",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.dcs_undergrads_with_pell_grant_or_federal_student_loan",
+          "label": "Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.student.dcs_undergrads_with_pell_grant_or_federal_student_loan_pooled",
+          "label": "Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages",
+          "is_url": false
+        }
+      ]
+    },
+    {
+      "key": "financial_aid",
+      "label": "Financial Aid",
+      "fields": [
+        {
+          "api_field": "latest.aid.pell_grant_rate",
+          "label": "Percentage of undergraduates who receive a Pell Grant",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.federal_loan_rate",
+          "label": "Percent of all undergraduate students receiving a federal student loan",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.loan_principal",
+          "label": "The median original amount of the loan principal upon entering repayment",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.completers.overall",
+          "label": "The median debt for students who have completed",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.noncompleters",
+          "label": "The median debt for students who have not completed",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.income.0_30000",
+          "label": "The median debt for students with family income between $0-$30,000",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.income.30001_75000",
+          "label": "The median debt for students with family income between $30,001-$75,000",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.income.greater_than_75000",
+          "label": "The median debt for students with family income $75,001+",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.dependent_students",
+          "label": "The median debt for dependent students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.independent_students",
+          "label": "The median debt for independent students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.pell_grant",
+          "label": "The median debt for Pell students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.no_pell_grant",
+          "label": "The median debt for no-Pell students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.female_students",
+          "label": "The median debt for female students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.male_students",
+          "label": "The median debt for male students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.first_generation_students",
+          "label": "The median debt for first-generation students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.non_first_generation_students",
+          "label": "The median debt for not-first-generation students",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.overall",
+          "label": "The number of students in the median debt cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.completers",
+          "label": "The number of students in the median debt completers cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.noncompleters",
+          "label": "The number of students in the median debt withdrawn cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.income.0_30000",
+          "label": "The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.income.30001_75000",
+          "label": "The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.income.greater_than_75000",
+          "label": "The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.dependent_students",
+          "label": "The number of students in the median debt dependent students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.independent_students",
+          "label": "The number of students in the median debt independent students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.pell_grant",
+          "label": "The number of students in the median debt Pell students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.no_pell_grant",
+          "label": "The number of students in the median debt no-Pell students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.female_students",
+          "label": "The number of students in the median debt female students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.male_students",
+          "label": "The number of students in the median debt male students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.first_generation_students",
+          "label": "The number of students in the median debt first-generation students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.number.non_first_generation_students",
+          "label": "The number of students in the median debt not-first-generation students cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt.completers.monthly_payments",
+          "label": "Median loan debt of completers in monthly payments (10-year amortization plan)",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.cumulative_debt.number",
+          "label": "Number of students in the cumulative loan debt cohort",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.cumulative_debt.90th_percentile",
+          "label": "Cumulative loan debt at the 90th percentile",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.cumulative_debt.75th_percentile",
+          "label": "Cumulative loan debt at the 75th percentile",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.cumulative_debt.25th_percentile",
+          "label": "Cumulative loan debt at the 25th percentile",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.cumulative_debt.10th_percentile",
+          "label": "Cumulative loan debt at the 10th percentile",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.students_with_any_loan",
+          "label": "Share of students who received a federal loan while in school",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt_suppressed.overall",
+          "label": "Median debt, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt_suppressed.completers.overall",
+          "label": "Median debt of completers, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.median_debt_suppressed.completers.monthly_payments",
+          "label": "Median debt of completers expressed in 10-year monthly payments, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.ftft_pell_grant_rate",
+          "label": "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.ftft_federal_loan_rate",
+          "label": "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.ftft_undergrads_pell_federal_loan_years",
+          "label": "Years used for rolling averages of FTFTPCTPELL_POOLED_SUPP and FTFTPCTFLOAN_POOLED_SUPP",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.ftft_pell_grant_rate_pooled",
+          "label": "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.ftft_federal_loan_rate_pooled",
+          "label": "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_loan_pct_lower",
+          "label": "Lower bound of estimated percentage range of students whose parents took out a PLUS loan",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_loan_pct_upper",
+          "label": "Upper bound of estimated percentage range of students whose parents took out a PLUS loan",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_loan_pct_lower_pooled",
+          "label": "Lower bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_loan_pct_upper_pooled",
+          "label": "Upper bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_loan_pct_years",
+          "label": "Years used for rolling averages of PPLUS_PCT_LOW_POOLED_SUPP and PPLUS_PCT_HIGH_POOLED_SUPP",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.all.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.all.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.all.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.all.all_inst.median",
+          "label": "Median PLUS loan debt disbursed at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to completers at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to completers at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.eval_inst.median_payment",
+          "label": "Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt_suppressed.completers.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to completers at this institution, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt_suppressed.completers.eval_inst.median_payment",
+          "label": "Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to completers at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to completers at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.completers.all_inst.median_payment",
+          "label": "Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt_suppressed.completers.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to completers at all institutions, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt_suppressed.completers.all_inst.median_payment",
+          "label": "Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions, suppressed for n=30",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.noncompleters.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-completers at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.noncompleters.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-completers at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.noncompleters.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.noncompleters.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-completers at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.male.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to males at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.male.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to males at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.male.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to males at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.male.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to males at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_male.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-males at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_male.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-males at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_male.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-males at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_male.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-males at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.pell.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to Pell recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.pell.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to Pell recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.pell.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.pell.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to Pell recipients at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_pell.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_pell.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-Pell-recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_pell.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.not_pell.all_inst.median",
+          "label": "Median PLUS loan debt disbursed to non-Pell-recipients at all institutions",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_this_school.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_this_school.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_this_school.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_this_school.all_inst.median",
+          "label": "Median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_this_school.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_this_school.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_this_school.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_this_school.all_inst.median",
+          "label": "Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_any_school.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_any_school.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_any_school.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.stafford_any_school.all_inst.median",
+          "label": "Median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_any_school.eval_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_any_school.eval_inst.median",
+          "label": "Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_any_school.all_inst.count",
+          "label": "Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.plus_debt.nostafford_any_school.all_inst.median",
+          "label": "Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.direct_loans.count",
+          "label": "Number of borrowers with outstanding federal Direct Loan balances",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.direct_loans.amount",
+          "label": "Total outstanding federal Direct Loan balance",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.parent_plus.count",
+          "label": "Number of students associated with outstanding Parent PLUS Loan balances",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.parent_plus.amount",
+          "label": "Total outstanding Parent PLUS Loan balance",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.grad_plus.count",
+          "label": "Number of students associated with outstanding Grad PLUS Loan balances",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.portfolio.grad_plus.amount",
+          "label": "Total outstanding Grad PLUS Loan balance",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.dcs_pell_grant_rate",
+          "label": "Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.dcs_federal_loan_rate",
+          "label": "Percentage of degree/certificate-seeking undergraduate students awarded a federal loan",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.dcs_pell_grant_rate_pooled",
+          "label": "Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.dcs_federal_loan_rate_pooled",
+          "label": "Percentage of degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size",
+          "is_url": false
+        },
+        {
+          "api_field": "latest.aid.dcs_undergrads_pell_federal_loan_years",
+          "label": "Years used for rolling averages of PCTPELL_DCS_POOLED_SUPP and PCTFLOAN_DCS_POOLED_SUPP",
+          "is_url": false
+        }
+      ]
+    }
+  ],
+  "value_labels": {
+    "school.degrees_awarded.predominant": {
+      "0": "Not classified",
+      "1": "Predominantly certificate-degree granting",
+      "2": "Predominantly associate's-degree granting",
+      "3": "Predominantly bachelor's-degree granting",
+      "4": "Entirely graduate-degree granting"
+    },
+    "school.degrees_awarded.highest": {
+      "0": "Non-degree-granting",
+      "1": "Certificate degree",
+      "2": "Associate degree",
+      "3": "Bachelor's degree",
+      "4": "Graduate degree"
+    },
+    "school.minority_serving.historically_black": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.predominantly_black": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.annh": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.tribal": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.aanipi": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.hispanic": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.minority_serving.nant": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.men_only": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.women_only": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "school.open_admissions_policy": {
+      "0": "No",
+      "1": "Yes"
+    }
+  }
+}

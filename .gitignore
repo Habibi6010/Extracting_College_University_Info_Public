@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# environments / python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# generated data (contains personal contact info — don't publish)
+college_finder_app/cache_data/state_schools/*
+college_finder_app/cache_data/staff/*
+college_finder_app/exports/*
+!college_finder_app/cache_data/.gitkeep
+!college_finder_app/exports/.gitkeep
